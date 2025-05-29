@@ -4,9 +4,12 @@
     {% if error is defined %}
         <p>{{error}}</p>
     {% endif %}
-    <form action="{{url_for('extract')}}" method="post">
+    <footer class="text-size:30px">
+        <form action="{{url_for('extract')}}" method="post" text-center>
             <label for="product_id">Kod produktu</label>
             <input type ="text" name="product_id" id="product_id" required>
             <button type="submit">Pobierz opinie</button>
-    </form>
+        </form>
+    </footer>
+    
 {% endblock %}
